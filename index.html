@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css"/>
+<svg id="alphabet-defs">
+    <defs>
+        <symbol id="a"><path d="M115.37 117.77L77.78 17.81a2.242 2.242 0 0 0-2.1-1.45H52.32c-.94 0-1.77.58-2.1 1.45l-37.59 99.96c-.26.69-.17 1.46.25 2.06s1.1.97 1.84.97h24.64c.96 0 1.82-.62 2.13-1.54l5.7-17.18H80.8l5.71 17.18c.3.92 1.16 1.54 2.13 1.54h24.64a2.236 2.236 0 0 0 2.09-3.03zm-61.14-36.9L64 51.45l9.77 29.43H54.23z"/></symbol>
+
+        <symbol id="b">
+            <path d="M93.22 66.17c5.68-5.41 9.19-12.68 9.19-20.7c0-16.63-15.01-30.15-33.46-30.15H31.08c-1.24 0-2.24 1-2.24 2.24v100.96c0 1.24 1 2.24 2.24 2.24H73.7c18.46 0 33.47-13.53 33.47-30.16c0-10.05-5.52-18.95-13.95-24.43zM67.4 56.82H53.41c-.21 0-.36-.14-.44-.33c-.03-.06-.08-.12-.08-.19V36c0-.07.05-.13.08-.19c.08-.18.23-.33.44-.33H67.4c5.61 0 10.18 4.78 10.18 10.66c0 5.89-4.57 10.68-10.18 10.68zm.85 44.48H53.49c-.04 0-.07-.04-.11-.05c-.22-.06-.4-.23-.4-.47V77.14c0-.24.18-.41.4-.47c.05-.01.07-.05.11-.05h14.75c.28 0 .56.02.83.05c5.84.47 10.46 5.79 10.46 12.29c0 6.48-4.6 11.8-10.43 12.29c-.27.02-.56.05-.85.05z"></path><symbol>
+        
+            <symbol id="c">
+            <path d="M111.21 107.69L99.92 85.46c-.16-.32-.46-.55-.81-.63s-.71.01-.99.23c-6.32 5.01-17.18 8.79-25.27 8.79c-15.63 0-26.55-10.58-26.55-25.73s10.92-25.73 26.55-25.73c8.46 0 17.14 2.72 22.64 7.11c.27.22.64.3.98.24c.34-.07.64-.29.81-.6l12.52-22.81c.28-.51.15-1.15-.31-1.51c-9.47-7.5-21.49-11.15-36.75-11.15c-32.5 0-56.08 22.91-56.08 54.46c0 31.56 23.58 54.46 56.08 54.46c14.87 0 27.72-4.52 38.18-13.45c.42-.36.54-.96.29-1.45z"></path>
+        </symbol>  
+            
+        <symbol id="d" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+            <path d="M65.71 15.31h-43.6c-1.25 0-2.24 1-2.24 2.24v100.96c0 1.24 1 2.24 2.24 2.24H65.7c30.15 0 50.43-21.19 50.43-52.73c0-31.53-20.27-52.71-50.42-52.71zm-1.29 80.8c-.28 0-.54-.07-.79-.16c-.06.01-.11.03-.17.03c-.08.01-.14.04-.22.04h-14.7c-1.2 0-2.16-.97-2.16-2.16V42.19c0-1.19.96-2.16 2.16-2.16h14.7c.08 0 .14.03.22.04c.05 0 .11.02.17.03c.25-.09.51-.16.79-.16c.43 0 .86.04 1.29.06c.75.03 1.5.09 2.24.18c13.11 1.63 21.69 12.39 21.69 27.84s-8.59 26.21-21.69 27.84c-.74.09-1.49.15-2.24.18c-.43.03-.86.07-1.29.07z"></path>
+        </symbol>
+
+        <symbol id="e"><path d="M98.89 36.51c1.23 0 2.24-1 2.24-2.24V17.55c0-1.24-1.01-2.24-2.24-2.24H29.1c-1.24 0-2.24 1-2.24 2.24v100.97c0 1.24 1 2.24 2.24 2.24h69.8c1.23 0 2.24-1 2.24-2.24V101.8c0-1.24-1.01-2.24-2.24-2.24H53.24V77.51h35.12c1.23 0 2.24-1 2.24-2.24V58.55c0-1.24-1.01-2.24-2.24-2.24H53.24v-19.8h45.65z"></path>
+        </symbol>
+
+        <symbol id="f"><path d="M101.15 15.54H34.86c-1.23 0-2.24 1-2.24 2.24v100.97c0 1.24 1.01 2.24 2.24 2.24h21.89c1.24 0 2.24-1 2.24-2.24v-44H94.1c1.24 0 2.24-1 2.24-2.24V55.79c0-1.24-1-2.24-2.24-2.24H58.99v-16.8h42.16c1.24 0 2.24-1 2.24-2.24V17.78c0-1.24-1-2.24-2.24-2.24z"></path>
+        </symbol>
+
+        <symbol id="g"><path d="M116.6 62.86H73.98c-.66 0-1.19.53-1.19 1.19v17.83c0 .31.12.62.35.84c.22.22.52.35.84.35l13.81-.02C86.74 91.44 77.24 98.3 66.3 98.3C49.43 98.3 39 82.8 39 68.43c0-14.13 10.21-28.75 27.3-28.75c7.41 0 16.95 4.43 21.88 8.71c.24.21.55.3.86.29c.32-.02.62-.17.82-.41l15.85-18.29a1.2 1.2 0 0 0-.09-1.66c-10.14-9.4-23.74-14.37-39.32-14.37c-32.5 0-56.09 22.91-56.09 54.47c0 31.57 23.59 54.48 56.09 54.48c49.01 0 51.49-49.04 51.49-58.87c0-.64-.53-1.17-1.19-1.17z"></path>
+        </symbol>
+
+        <symbol id="h"><path d="M109.48 16.34H84.84c-1.28 0-2.33 1.04-2.33 2.33v36.27H45.5V18.68c0-1.29-1.04-2.33-2.34-2.33H18.53a2.34 2.34 0 0 0-2.34 2.33v99.96c0 1.29 1.05 2.33 2.34 2.33h24.63a2.34 2.34 0 0 0 2.34-2.33V76.15h37.02v42.48c0 1.29 1.05 2.33 2.33 2.33h24.64c1.29 0 2.33-1.05 2.33-2.33V18.68a2.35 2.35 0 0 0-2.34-2.34z"></path>
+        </symbol>
+
+    </defs>
+</svg>
+
+
+</head>
+
+<body>
+<script
+    type="module"
+    src="https://unpkg.com/playhtml@latest/dist/init.es.js"
+  ></script>
+<h1><em>kitschen</em></h1>
+
+<div class="container">
+    <div id="fridge-box">
+        <svg id="fridge" width="620" height="1250" xmlns="http://www.w3.org/2000/svg">
+            <rect id="freezer-door" width="600" height="400" x="10" y="10" rx="20" ry="20" fill="pink" stroke="black" stroke-width="2px"/>
+            <rect id="freezer-handle" width="30" height="320" x="50" y="40" rx="10" ry="10" fill="white" stroke="black" stroke-width="2px"/>
+            <rect id="fridge-door" width="600" height="800" x="10" y="415" rx="20" ry="20" fill="pink" stroke="black" stroke-width="2px"/>
+            <rect id="fridge-handle" width="30" height="740" x="50" y="435" rx="10" ry="10" fill="white" stroke="black" stroke-width="2px"/>
+        </svg>
+    </div>
+</div>
+<section id="alphabet">
+    <div class="magnet withClientRectsOverlay" can-play is-magnetic>
+        <svg id="magneta0" viewBox="5 5 125 125" width="25px" height="25px">
+            <use href="#a" fill="red"></use>
+        </svg>
+    </div>
+    <div class="magnet" can-play is-magnetic>
+        <svg id="magnetb0" viewBox="5 5 125 125" width="25px" height="25px">
+            <use href="#b" fill="blue"></use>
+        </svg>
+    </div>
+    <div class="magnet" can-play is-magnetic>
+        <svg id="magnetc0" viewBox="5 5 125 125" width="25px" height="25px">
+            <use href="#c" fill="#fee12b"></use>
+        </svg>
+    </div>
+    <div class="magnet" can-play is-magnetic>
+        <svg id="magnetd0" viewBox="5 5 125 125" width="25px" height="25px">
+            <use href="#d" fill="green"></use>
+        </svg>
+    </div>
+    <div class="magnet" can-play is-magnetic>
+        <svg id="magnete0" viewBox="5 5 125 125" width="25px" height="25px">
+            <use href="#e" fill="darkviolet"></use>
+        </svg>
+    </div>
+    <div class="magnet" can-play is-magnetic>
+        <svg id="magnetf0" viewBox="5 5 125 125" width="25px" height="25px">
+            <use href="#f" fill="dodgerblue"></use>
+        </svg>
+    </div>
+    <div class="magnet" can-play is-magnetic>
+        <svg id="magnetg0" viewBox="5 5 125 125" width="25px" height="25px">
+            <use href="#g" fill="deeppink"></use>
+        </svg>
+    </div>
+    <div class="magnet" can-play is-magnetic>
+        <svg id="magneth0" viewBox="5 5 125 125" width="25px" height="25px">
+            <use href="#h" fill="orangered"></use>
+        </svg>
+    </div>
+
+
+<!-- have them cast a drop shadow when picked up -->
+
+    </section>
+
+
+<script>
+    function setupAllMagnets(selector = '[can-play][is-magnetic]') {
+        const magnets = document.querySelectorAll(selector);
+    
+        magnets.forEach(magnet => {
+            magnet.defaultData = { x: 0, y: 0, grabbed: false, casting: false};
+            magnet.defaultLocalData = { startMouseX: 0, startMouseY: 0 };
+
+            magnet.updateElement = ({ element, data }) => {
+                element.style.filter = data.casting ? `drop-shadow(20px 10px 4px magenta)` : `none`;
+                element.children[0].style.transform = data.grabbed ? `scale(1.1)` : `scale(1)`;
+
+                if (!element.classList.contains('falling')) {
+                    element.style.transform = `translate(${data.x}px, ${data.y}px)`;
+                } 
+            };
+
+            magnet.onDrag = (e, { data, localData, setData, setLocalData, element }) => {
+                const { clientX, clientY } = getClientCoordinates(e);
+                const { top, left, bottom, right } = element.getBoundingClientRect();
+                if (
+                    (right > window.outerWidth && clientX > localData.startMouseX) ||
+                    (bottom > window.innerHeight && clientY > localData.startMouseY) ||
+                    (left < 0 && clientX < localData.startMouseX) ||
+                    (top < 0 && clientY < localData.startMouseY)
+                )
+                    return;
+                setData({
+                    x: data.x + clientX - localData.startMouseX,
+                    y: data.y + clientY - localData.startMouseY,
+                    grabbed: true,
+                    casting: checkMagnetSticks(magnet)
+                });
+                setLocalData({ startMouseX: clientX, startMouseY: clientY });
+            };
+
+            magnet.onDragStart = (e, {setData, setLocalData, data}) => {
+                // Clear any previous animations
+                magnet.classList.remove('falling');
+
+                const { clientX, clientY } = getClientCoordinates(e);
+                setLocalData({
+                    startMouseX: clientX,  // Remember where drag started
+                    startMouseY: clientY
+                });
+                setData({ x: data.x, y: data.y, grabbed: true, casting: checkMagnetSticks(magnet)});
+            };
+
+            
+            magnet.onMount = ({ getData, setData }) => {
+                magnet.addEventListener("mouseup", (e) => {
+                    e.preventDefault();
+                    const data = getData();
+                    if (checkMagnetSticks(magnet)) {
+                        const clunk = new Audio("sound/clunk1.mp3");
+                        clunk.play();
+                    }
+
+                    setData({x: data.x, y: data.y, grabbed: false, casting: false});
+                });
+            };
+
+            // TODO: make a transform mask for the drop shadow instead of edge check
+            function checkMagnetSticks(m) {
+                const { top, left, bottom, right } = m.getBoundingClientRect();
+                const fridgeDims = document.getElementById("fridge").getBoundingClientRect();
+                return !(right > (fridgeDims.right + (right - left)) || (left < (fridgeDims.left - (right - left))) || (top > fridgeDims.bottom - (bottom - top)) || (bottom < fridgeDims.top + (bottom - top)));
+            };
+/*
+            function fallToBottom(data, setData) {
+                // Get current scroll position and viewport height
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const viewportHeight = window.innerHeight;
+                console.log(viewportHeight);
+                const magnetHeight = magnet.offsetHeight;
+                
+                // Bottom of currently visible screen
+                const finalY = viewportHeight - magnetHeight - 20;
+
+                // Start falling animation
+                magnet.classList.add('falling');
+                
+                // TODO figure out how to convert between original location & bottom of current viewport 
+                magnet.style.transform = `translate(${data.x}px, -400px)`;
+
+                setTimeout(() => {
+                magnet.classList.remove('falling');
+                // Update the actual data to the final position
+                setData({ x: data.x, y: -400, grabbed: false, casting: false });
+            
+                }, 800); // Match falling animation duration
+            };*/
+        });
+
+        function getClientCoordinates(e) {
+            if ("touches" in e) {
+                const touch = e.touches[0];
+                return { 
+                    clientX: Number(touch.clientX) || 0, 
+                    clientY: Number(touch.clientY) || 0 
+                };
+            }
+            return { clientX: Number(e.clientX), clientY: Number(e.clientY)};
+        };
+    };
+
+    setupAllMagnets();
+// TODO improve the fridge collision detection
+</script>
+</body>
+
+</html>

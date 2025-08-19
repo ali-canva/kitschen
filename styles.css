@@ -1,0 +1,29 @@
+
+/* use absolute (ish?) sizing so that the magnets "growing" doesnt look so weird */
+
+.magnet {
+    cursor: grab;
+    width: 25px;
+    padding: 0px;
+}
+
+#fridge {
+    background-color: red;
+}
+
+#fridge-box {
+    background-color: blue;
+}
+
+.magnet.cursordown {
+  cursor: grabbing;
+  transition: none; /* Disable transitions while dragging */
+}
+
+.magnet.falling {
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+strong {
+  text-align: center;
+}
