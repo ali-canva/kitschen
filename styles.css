@@ -27,15 +27,13 @@
   transition: none; /* Disable transitions while dragging */
 }
 
-.popup-modal {
-  font-size: 1.5em;
-}
-
 #closePopup {
   margin: 1em;
   font-size: 0.9em; 
   padding: 0.5% 1.5%;
   border-radius: 3px;
+  font-family: serif;
+  border-width: 1px;
 }
 
 #closePopup:active {
@@ -80,5 +78,3 @@
     width: fit-content;
     display: block;
   }
-/* red, blue, #fee12b, #03ac13, darkviolet, dodgerblue, deeppink, orangered, dodgerblue, rgb(255, 106, 190), darkturquoise, limegreen, #40C0E7 */  
-/* other green:  03c04a
