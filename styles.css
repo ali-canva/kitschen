@@ -1,18 +1,25 @@
 
 /* use absolute (ish?) sizing so that the magnets "growing" doesnt look so weird */
 
+* {
+  --magnet-width: 25px;
+  --magnet-padding: 0px;
+}
+
+#alphabet-defs {
+  display: none;
+}
+
 .magnet {
     cursor: grab;
-    width: 25px;
-    padding: 0px;
+    width: var(--magnet-width);
+    padding: var(--magnet-padding);
 }
 
-#fridge {
-    background-color: red;
-}
-
-#fridge-box {
-    background-color: blue;
+#alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(var(--magnet-width) * 26);
 }
 
 .magnet.cursordown {
@@ -20,10 +27,58 @@
   transition: none; /* Disable transitions while dragging */
 }
 
-.magnet.falling {
-  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.popup-modal {
+  font-size: 1.5em;
 }
 
-strong {
-  text-align: center;
+#closePopup {
+  margin: 1em;
+  font-size: 0.9em; 
+  padding: 0.5% 1.5%;
+  border-radius: 3px;
 }
+
+#closePopup:active {
+  background-color: grey;
+}
+
+.popup-content p {
+  margin: 0;
+  margin-bottom: 1%;
+  
+}
+
+.popup-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.274);
+    z-index: 1;
+  }
+
+  .popup-content {
+    position: fixed;
+    width: 50%;
+    left: 25%;
+    top: 12.5%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-width: 10px;
+    border: solid 1.5px black;
+    text-align: center;
+  }
+
+  .popup-content ul {
+    text-align: left;
+    margin: auto;
+    width: fit-content;
+    display: block;
+  }
+/* red, blue, #fee12b, #03ac13, darkviolet, dodgerblue, deeppink, orangered, dodgerblue, rgb(255, 106, 190), darkturquoise, limegreen, #40C0E7 */  
+/* other green:  03c04a
